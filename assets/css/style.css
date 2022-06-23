@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  border: 0px;
+}
+  body{
+    font-family: roboto;
+  }
+  .grid-content {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas: "head head"
+                         "nav main"
+                         "foot  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+  }
+  
+  .grid-content > header {
+    grid-area: head;
+    background-color: #eaddc8;
+    text-align: center;
+    color: #ff5733;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  .grid-content > nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    color: #c70039;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .grid-content > main {
+    grid-area: main;
+    background-color: #ffc300;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    background-color: #ff5733;
+    height: 370px;
+    margin-bottom: 28px;
+    color: #900c3f;;
+  }
+  .categoria{
+    height: 30px;
+    margin: 5px;
+  }
+  .botonComprar{
+    width: 100%;
+    height: 35px;
+    background-color: #581845;
+    cursor: pointer;
+    color: white;
+    border: 0px;
+  }
+
+  .botonComprar:hover{
+    background-color:#c6bbed;
+  }
+  
+  .botonComprar:focus{
+    background-color: #D8D7DC;
+  }
+  h2{
+    margin-bottom: 15px;
+  }
+  footer{
+    height: 100px;
+    width: 100%;
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #eaddc8;
+    color: white;
+  }
